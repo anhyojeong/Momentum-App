@@ -8,35 +8,42 @@
     <title>Momentum App</title>
   </head>
   <body>
+    <div class="container">
     <h2 id="clock">00:00:00</h2>
-    <form class="hidden" id="login-form">
-      <input
-        maxlength="15"
-        type="text"
-        placeholder="what is your name?"
-        required
-      />
-      <input type="submit" value="Log In" />
-    </form>
-    <h1 id="greeting" class="hidden"></h1>
-    <form id="todo-form">
-      <input type=" text" placeholder="write a to do and press enter" />
-    </form>
-    <ul id="todo-list"></ul>
-    <div id="quote">
-      <span></span>
-      <span></span>
+      <form class="container-item" id="login-form">
+        <input
+          id="input-name-box"
+          maxlength="15"
+          type="text"
+          placeholder="What is your name?"
+          required
+        />
+        <input
+          id = "input-name-submit" 
+          type="submit" 
+          value="Log In" />
+      </form>
+      <h1 id="greeting" class="hidden container-item"></h1>
+      <form id="todo-form" class="container-item hidden">
+        <input type=" text" placeholder="write a to do and press enter" />
+      </form>
+      <ul id="todo-list"></ul>
+      <div id="quote" class="container-item">
+        <span></span>
+        <span></span>
+      </div>
     </div>
-    <div id="weather">
-      <span></span>
-      <span></span>
-    </div>
+      <div id="weather">
+        <span></span>
+        <span></span>
+      </div>
+
     <script src="./js/greetings.js"></script>
     <script src="./js/clock.js"></script>
     <script src="./js/quotes.js"></script>
     <script src="./js/background.js"></script>
     <script src="./js/todo.js"></script>
-    <script src="./js/API_KEY.js"></script>
-    <script src="./js/weather.js"></script>
+    <!-- <script src="./js/API_KEY.js"></script> -->
+    <!-- <script src="./js/weather.js"></script> -->
   </body>
 </html>
